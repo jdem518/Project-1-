@@ -1,5 +1,5 @@
 # Project-1-
-A project from my Cyber Security Boot Camp
+
 
 ## Automated ELK Stack Deployment
 
