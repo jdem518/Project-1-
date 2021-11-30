@@ -86,8 +86,15 @@ SSH into the control node and follow the steps below:
 - Copy the filebeat-playbook.yml and metricbeat-playbook.yml files to your ansible directory (~/etc/ansible).
 - Update the hosts file to include your private IP addresses for the machines you want for each service. DVWA machines are under webservers while the Elk stack is under Elk. In turn you can then update each playbook file with the host to tell ansible which machines to run the playbook on.
 - Run the playbooks, and navigate to the Public IP address of the Elk-VM on port 5601 to check that the installation worked as expected.
-
-### How to use Ansible Build
+- Which file is the playbook? Where do you copy it?
+    	 /etc/ansible/file/filebeat-configuration.yml 
+- Which file do you update to make Ansible run the playbook on a specific machine? How do I specify which machine to install the ELK server on versus which to install Filebeat on?_
+        edit the /etc/ansible/hosts file to add webserver/elkserver ip addresses
+- Which URL do you navigate to in order to check that the ELK server is running?
+    	 http://[your.ELK-VM.External.IP]:5601/app/kiban
+       
+       
+       ### How to use Ansible Build
 Use the nano command to update your configuration files to you specifications
 - nano ansible.cfg
 - nano metricbeat-config.yml
@@ -105,10 +112,3 @@ Run the metricbeat and filebeat playbooks to get both services running on your E
 If configured correctly navigating to your Elk-VMs public IP address on port 5601 should produce this screen:
 
 ![https://github.com/jdem518/Project-1-/blob/main/Screenshots/Kibana.docx]
-
-- Which file is the playbook? Where do you copy it?
-    	 /etc/ansible/file/filebeat-configuration.yml 
-- Which file do you update to make Ansible run the playbook on a specific machine? How do I specify which machine to install the ELK server on versus which to install Filebeat on?_
-        edit the /etc/ansible/hosts file to add webserver/elkserver ip addresses
-- Which URL do you navigate to in order to check that the ELK server is running?
-    	 http://[your.ELK-VM.External.IP]:5601/app/kiban
