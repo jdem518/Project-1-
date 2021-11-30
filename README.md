@@ -94,7 +94,7 @@ SSH into the control node and follow the steps below:
     	 http://[your.ELK-VM.External.IP]:5601/app/kiban
        
        
-       ### How to use Ansible Build
+     ### How to use Ansible Build
 Use the nano command to update your configuration files to you specifications
 - nano ansible.cfg
 - nano metricbeat-config.yml
