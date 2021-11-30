@@ -5,7 +5,7 @@
 
 The files in this repository were used to configure the network depicted below.
 
-![https://https://github.com/jdem518/Project-1-/files/7621845/Diagram.docx ](Diagrams/Elk-server-diagram.png)
+![https://https://github.com/jdem518/Project-1-/files/7621845/Diagram.docx]
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the YAML files may be used to install only certain pieces of it, such as Filebeat.
 
